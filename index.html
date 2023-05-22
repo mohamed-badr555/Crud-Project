@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="w-75 m-auto my-4">
+        <label for="pn">Product Name</label>
+        <input id="pn" type="text" class="form-control m-1" placeholder="Product Name">
+        <p class="ps-3 mb-0 text-danger error1 d-none"></p>
+        <label for="pp">Product Price</label>
+        <input id="pp" type="number" class="form-control mb-1" placeholder="Product Price">
+        <p class="ps-3 mb-0 text-danger error2 d-none"></p>
+        <label for="pc">Product Category</label>
+        <input id="pc" type="text" class="form-control mb-1" placeholder="Product Category">
+        <p class="ps-3 mb-0 text-danger error3 d-none"></p>
+
+        <textarea class="form-control mt-2 mb-1" placeholder="Product Description" id="pd"></textarea>
+        <p class="ps-3 mb-0 text-danger error4 d-none"></p>
+        <button onclick="addProduct()" id="add" class="btn mt-3 btn-info w-100">Add</button>
+        <div class="py-5">
+           
+            <input onkeyup="search(this.value)"  type="text" class="form-control w-75 mx-auto mb-2" name="" id="search" placeholder="Product Name">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Category</th>
+                        <th>Description</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
