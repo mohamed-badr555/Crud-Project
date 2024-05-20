@@ -18,15 +18,7 @@ if (localStorage.getItem("allProducts") != null) {
     display()
 
 }
-// erorrمرة شغالة ومرة 
-// pn.addEventListener("keyup",function(){
-//     if (regex.test(pn.value)==false) {
-//         error1.classList.replace("d-none", "d-block")
-//         error1.innerHTML = "the first letter is Capitalize and at least four characrater ";
-//     }else{
-//         error1.classList.replace("d-block", "d-none")
-//     }
-// })
+
 pp.addEventListener("keyup",function(){
     if (regexprice.test( pp.value) == false) {
         console.log("error", pp.value);
